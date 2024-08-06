@@ -1,0 +1,55 @@
+/*  body{
+    background-image: url('https://cdn.britannica.com/61/137461-050-BB6C5D80/Brad-Pitt-2008.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+div{
+    width: 150px;
+    height: 150px;
+    background: red;
+    float: left;
+    
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+ body{
+    background: #E2F7F7;
+    background-image: ; 
+    background-size: cover;
+    background-position: top;
+
+}
+
+#demo{
+    height: 150px;
+    width: 150px;
+     background: red; 
+    background-image: url('../img/target.png');
+    background-size: cover;
+    background-position: center;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}  */
+/* div{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    float: left;
+    margin: 5px;
+}
+
+.red{
+    background: red;
+}
+
+.green{
+    background: green;
+} */

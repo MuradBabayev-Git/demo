@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            color: green;
+        }
+        .parent{
+            overflow: hidden;
+            margin-top:50px;
+        }
+            
+        .child{
+            width:200px;
+            height: 150px;
+            float: left;
+            margin-left:20px;
+            border:1px solid green;
+            text-align:center;
+            line-height:150px;
+            cursor: pointer;
+            background-color:#ddd;
+        } 
+        .bak{ 
+            background-color: red!important;
+            color: #fff!important;
+            font-weight:bold;
+        }
+
+        .bak2{ 
+            background-color: white!important;
+            color: red!important;
+            font-weight:bold;
+        }
+
+        .bak3{ 
+            background-color: black!important;
+            color: yellow!important;
+            font-weight:bold;
+        }
+
+        .bak4{ 
+            background-color: yellow!important;
+            color: black!important;
+            font-weight:bold;
+        }
+
+        .ss{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Users</h1>
+    <input type="text" id="input" placeholder="username">
+    <button onclick="demo()"></button> -->
+
+    <!-- <h1>users</h1>
+    <input type="text" id="input" placeholder="Enter Username">
+    <button onclick="demo()">Add</button>
+
+    <p class="result"></p> -->
+
+
+    <div class="parent">
+        <div class="child">DIV1</div>
+        <div class="child">DIV2</div>
+        <div class="child">DIV3</div>
+        <div class="child">DIV4</div>
+        <div class="child">DIV5</div>
+        <div class="child">DIV6</div>
+        <!-- ///////// -->
+        <div class="child ss">DIV7</div>
+        <div class="child ss">DIV8</div>
+        <div class="child ss">DIV9</div>
+        <div class="child ss">DIV10</div>
+        <div class="child ss">DIV11</div>
+        <div class="child ss">DIV12</div>
+        <!-- ///////// -->
+        <div class="child ss">DIV13</div>
+        <div class="child ss">DIV14</div>
+        <div class="child ss">DIV15</div>
+        <div class="child ss">DIV16</div>
+        <div class="child ss">DIV17</div>
+        <div class="child ss">DIV18</div>
+        <!-- ///////// -->
+        <div class="child ss">DIV19</div>
+        <div class="child ss">DIV20</div>
+        <div class="child ss">DIV21</div>
+        <div class="child ss">DIV22</div>
+        <div class="child ss">DIV23</div>
+        <div class="child ss">DIV24</div>
+    </div>
+
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/MYLwfsXMgCY" title="Traveling to AZERBAIJAN | The Journey to Baku" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/MYLwfsXMgCY" title="Traveling to AZERBAIJAN | The Journey to Baku" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/MYLwfsXMgCY" title="Traveling to AZERBAIJAN | The Journey to Baku" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/MYLwfsXMgCY" title="Traveling to AZERBAIJAN | The Journey to Baku" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/MYLwfsXMgCY" title="Traveling to AZERBAIJAN | The Journey to Baku" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/MYLwfsXMgCY" title="Traveling to AZERBAIJAN | The Journey to Baku" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+
+</body>
+</html>
+
+<script>
+
+// <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+// document.getElementById("demo").innerHTML =
+// Math.floor(Math.random() * 2);
+// const points = [40, 100, 1, 5, 25, 10];
+// points.sort(function(a, b){return a - b});
+// document.getElementById("demo").innerHTML = Math.random();
+
+
+var elements = document.getElementsByClassName("child");
+
+for(var i = 0; i <=7 ; i++)
+{
+elements[i].onclick = function(){
+    
+    var el = elements[0];
+    while(el)
+    {
+        if(el.tagName === "DIV"){
+            el.classList.remove("bak");
+            
+        }
+        el = el.nextSibling;
+    }
+    
+  this.classList.add("bak");  
+};
+    }
+
+var elements = document.getElementsByClassName("child");
+
+for(var i = 6; i <=12 ; i++)
+{
+elements[i].onclick = function(){
+    
+    var el = elements[0];
+    while(el)
+    {
+        if(el.tagName === "DIV"){
+            el.classList.remove("bak2");
+            
+        }
+        el = el.nextSibling;
+    }
+    
+  this.classList.add("bak2");  
+};
+    }
+
+var elements = document.getElementsByClassName("child");
+
+for(var i = 12; i <=18 ; i++)
+{
+elements[i].onclick = function(){
+    
+    var el = elements[0];
+    while(el)
+    {
+        if(el.tagName === "DIV"){
+            el.classList.remove("bak3");
+            
+        }
+        el = el.nextSibling;
+    }
+    
+  this.classList.add("bak3");  
+};
+    }
+
+
+var elements = document.getElementsByClassName("child");
+
+for(var i = 18; i <=24 ; i++)
+{
+elements[i].onclick = function(){
+    
+    var el = elements[0];
+    while(el)
+    {
+        if(el.tagName === "DIV"){
+            el.classList.remove("bak4");
+            
+        }
+        el = el.nextSibling;
+    }
+    
+  this.classList.add("bak4");  
+};
+    }
+
+
+
+
+
+
+// function demo(){
+
+
+
+//     let input = document.getElementById('input')
+
+//     users.push(input.value)
+
+
+//     console.log(users)
+
+// }
+
+
+// onkeydown = (e) => {
+
+//     if(e.key == "Enter"){
+//         let input = document.getElementById('input')
+//         users.push(input.value)
+//         input.value = ""
+
+//         console.log(users)
+//     }
+// }
+
+// let country = ['Azerbaycan', 'Turkey', 'Russia',"Rza","Murad","Xaliq","Ibrahim"]
+
+// let demo = () => {
+
+
+//         let input = document.getElementById('input')
+
+
+
+//         country.push(input.value)
+
+//         input.value = ""
+
+//         for( let i = 0; i < country.length; i++){
+//             let result = document.getElementsByClassName('result')
+//             console.log(result[i])
+//             result[0].innerHTML = country[i]
+//         }
+//         console.log(country)
+// }
+
+
+
+
+// var users = []
+
+// function demo(){
+//     var users = []
+
+//     let input = document.getElementById('input')
+//     // console.log(input.value)
+//     users.push(input.value)
+//     console.log(input.value)
+// }
+
+
+// for( let i = 1; i <= 1000; i++){
+//     console.log(i)
+// }
+
+
+</script>
